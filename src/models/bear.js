@@ -5,4 +5,4 @@ var BearSchema = new Schema ({
     name: String
 });
 
-module.exports = BearSchema;
+module.exports = mongoose.model('Bear', BearSchema);

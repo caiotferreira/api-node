@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 var port = process.env.PORT || 8080;
 
 //chamando o model bear.js
-var bearSchema = require('./src/models/bear.js');
-var ModelBear = mongoose.model(`Bear`, bearSchema);
+var Bear = require('./src/models/bear');
+//var ModelBear = mongoose.model(`Bear`, bearSchema);
 
 // ROTAS PARA A API
 var router = express.Router();
